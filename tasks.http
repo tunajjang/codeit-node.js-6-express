@@ -1,1 +1,30 @@
-GET http://localhost:3000/tasks?sort=oldest&count=2
+GET http://localhost:3000/tasks/
+
+####
+
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "title" : "Express 서버 구축",
+    "description" : "Express를 활용하여 로컬에서 서버를 띄어봅시다"
+
+}
+
+
+####
+
+GET http://localhost:3000/tasks/8
+
+####
+PATCH http://localhost:3000/tasks/1
+Content-Type: application/json
+
+{
+    "title" : "수정 데이터1",
+    "description" : "수정된 데이터1234"
+
+}
+
+####
+DELETE http://localhost:3000/tasks/1
