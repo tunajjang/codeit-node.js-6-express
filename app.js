@@ -22,7 +22,7 @@ app.use(cors(corsOptions));
 
 await mongoose.connect(DATABASE_URL);
 
-app.get('/task', async (req, res) => {
+app.get('/tasks', async (req, res) => {
   /** 쿼리 목록
    *  - count: 아이템 개수
    *  - sort: 정렬
@@ -39,7 +39,7 @@ app.get('/task', async (req, res) => {
   res.send(tasks);
 });
 
-app.get('/task/:id', async (req, res) => {
+app.get('/tasks/:id', async (req, res) => {
   const task = await Task.findById(req.params.id);
   if (task) {
     res.send(task);
@@ -48,12 +48,12 @@ app.get('/task/:id', async (req, res) => {
   }
 });
 
-app.post('/task', async (req, res) => {
+app.post('/tasks', async (req, res) => {
   const newTask = await Task.create(req.body);
   res.send(newTask);
 });
 
-app.patch('/task/:id', async (req, res) => {
+app.patch('/tasks/:id', async (req, res) => {
   const task = await Task.findById(req.params.id);
   if (task) {
     const { body } = req;
@@ -67,7 +67,7 @@ app.patch('/task/:id', async (req, res) => {
   }
 });
 
-app.delete('/task/:id', async (req, res) => {
+app.delete('/tasks/:id', async (req, res) => {
   const task = await Task.findByIdAndDelete(req.params.id);
 
   if (task) {
