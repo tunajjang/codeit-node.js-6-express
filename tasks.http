@@ -1,4 +1,4 @@
-GET http://localhost:3000/tasks/
+GET http://localhost:3000/tasks/?count=10
 
 ####
 
@@ -14,10 +14,10 @@ Content-Type: application/json
 
 ####
 
-GET http://localhost:3000/tasks/8
+GET http://localhost:3000/tasks/68f6f744fbae790b10ff9455
 
 ####
-PATCH http://localhost:3000/tasks/1
+PATCH http://localhost:3000/tasks/68f6f744fbae790b10ff9455
 Content-Type: application/json
 
 {
@@ -27,4 +27,4 @@ Content-Type: application/json
 }
 
 ####
-DELETE http://localhost:3000/tasks/1
+DELETE http://localhost:3000/tasks/68f6f744fbae790b10ff9455
