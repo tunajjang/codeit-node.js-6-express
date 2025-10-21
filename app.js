@@ -7,6 +7,7 @@ import cors from 'cors';
 const app = express();
 
 app.use(cors()); // 모든 origin에 대해 허용
+app.use(express.json());
 
 /*
 
@@ -18,8 +19,6 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 */
-
-app.use(express.json());
 
 await mongoose.connect(DATABASE_URL);
 
