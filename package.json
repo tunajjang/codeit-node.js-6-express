@@ -1,5 +1,5 @@
 {
-  "name": "7-EXPRESS-SERVER",
+  "name": "6-network-request",
   "keywords": [],
   "version": "1.0.0",
   "description": "",
@@ -8,15 +8,13 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node main.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js",
     "seed": "node seed.js"
   },
   "dependencies": {
-    "axios": "^1.12.2",
     "cors": "^2.8.5",
-    "date-fns": "^4.1.0",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "mongoose": "^7.8.7"
