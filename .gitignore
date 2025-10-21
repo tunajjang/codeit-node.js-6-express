@@ -142,4 +142,4 @@ vite.config.ts.timestamp-*
 
 #extra files
 .prettierrc
-.node_modules
+node_modules/
