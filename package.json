@@ -1,5 +1,5 @@
 {
-  "name": "6-network-request",
+  "name": "7-EXPRESS-SERVER",
   "keywords": [],
   "version": "1.0.0",
   "description": "",
@@ -8,7 +8,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node main.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js",
     "seed": "node seed.js"
