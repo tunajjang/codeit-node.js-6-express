@@ -30,9 +30,9 @@ app.get('/tasks', async (req, res) => {
    */
   const count = Number(req.query.count) || 0;
 
-  // if (count === 0) {
-  //   return res.json([]);
-  // }
+  if (count === 0) {
+    return res.json([]);
+  }
 
   const sortOption =
     req.query.sort === 'oldest' ? ['createdAt', 'asc'] : ['createdAt', 'desc'];
