@@ -28,7 +28,7 @@ app.get('/tasks', async (req, res) => {
    *  - count: 아이템 개수
    *  - sort: 정렬
    */
-  const count = Number(req.query.count) || 0;
+  const count = req.query.count || 0;
 
   if (count === 0) {
     return res.json([]);
